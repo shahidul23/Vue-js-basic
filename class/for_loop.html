@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Vue ja class</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    </head>
+    <body>
+        <h1>Vue js For loop Class</h1>
+        <div id="app">
+          <ol>
+            <li v-for="name in names">{{name}}</li>
+          </ol>
+          <ul>
+            <li v-for="(fruit,index) in fruits">
+               {{index+1}}->{{ fruit.name }} || {{ fruit.color }} || {{ fruit.weight }}
+            </li>
+          </ul>
+        </div>
+        <script src="for_loop.js"></script>
+       
+    </body>
+</html>
+

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Vue ja class</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <style>
+            .canvas{
+                height: 300px;
+                width: 300px;
+                background-color: blueviolet;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Event Object Class</h1>
+        <div id="app">
+           <button v-on:click="Me">click me</button>
+           <div class="canvas"v-on:mousemove="over">
+            {{ log.x }},{{log.y}}
+           </div>
+        </div>
+        <script src="event_object.js"></script>
+       
+    </body>
+</html>
+
